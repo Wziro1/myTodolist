@@ -1,0 +1,41 @@
+{
+    "name": "My Todolist",
+    "short_name": "Todolist",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "orangered",
+    "theme_color": "orangered",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/images/list-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/images/list-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/images/list-128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/images/list-64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/images/list-32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/images/list-16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        }
+    ]
+}
