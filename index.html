@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Todolist</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>My Todolist</h1>
+        </header>
+        <main>
+            <form class="addForm">
+                <h1>Add todo</h1>
+                <label for="title">Title:</label>
+                <input
+                    class="todoInput"
+                    id="title"
+                    name="title"
+                    type="text"
+                    placeholder="your todo..."
+                    maxlength="24"
+                    required
+                />
+                <label for="desc">Description:</label>
+                <textarea
+                    name="desc"
+                    id="desc"
+                    cols="30"
+                    rows="10"
+                    placeholder="Description..."
+                    maxlength="250"
+                ></textarea>
+                <button class="addTodo" type="submit">Add</button>
+            </form>
+
+            <h1 style="text-align: center; color: orangered;">Todolist:</h1>
+            <div class="todos">
+
+            </div>
+            <h1 style="text-align: center; color: gray;">Completed:</h1>
+            <div class="completedTodos">
+
+            </div>
+        </main>
+
+        <div class="editModal">
+            <form class="editForm">
+                <h1>Edit todo</h1>
+                <label for="titleEdit">Title:</label>
+                <input
+                    class="todoInput"
+                    id="titleEdit"
+                    name="titleEdit"
+                    type="text"
+                    placeholder="your todo..."
+                    maxlength="24"
+                    required
+                />
+                <label for="descEdit">Description:</label>
+                <textarea
+                    name="descEdit"
+                    id="descEdit"
+                    cols="30"
+                    rows="10"
+                    placeholder="Description..."
+                    maxlength="250"
+                ></textarea>
+                <div class="editFormButtons">
+                    <button class="editTodo" type="submit">Submit</button>
+                    <div class="closeModal">Deny</div>
+                </div>
+            </form>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
